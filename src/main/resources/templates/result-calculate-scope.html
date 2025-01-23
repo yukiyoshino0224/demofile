@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="https://www.thymeleaf.org">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span th:text="${num1}">dummy</span>+<span th:text="${num2}">dummy</span>=<span th:text="${result}">dummy</span><br>
+    <span th:text="${num3}">dummy</span>‐<span th:text="${num4}">dummy</span>=<span th:text="${result2}">dummy</span><br>
+    <span th:text="${num5}">dummy</span>×<span th:text="${num6}">dummy</span>=<span th:text="${result3}">dummy</span><br>
+    <span th:text="${num7}">dummy</span>÷<span th:text="${num8}">dummy</span>=<span th:text="${result4}">dummy</span><br>
+    <form th:action="@{/requestCalculate}" method="post">
+    <button>戻る</button></form>
+</body>
+</html>
